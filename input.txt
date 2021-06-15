@@ -1,0 +1,72 @@
+bring std.h
+task
+SHURU
+    PURNO abc;
+    abc = 4;
+    PURNO va;
+    va = 10;
+    SHOW(abc);
+
+    LOOP abc THEKE 10 OFFSET 2{
+        va = va BIYOG 2;
+    } 
+    SHOW(va);
+    LOOP abc THEKE va OFFSET 1{
+        va = va JOG 3;
+    }
+    SHOW(va);
+    LOOP 10 THEKE va OFFSET 1{
+        va = va JOG 3;
+    }
+    SHOW(va);
+    LOOP 10 THEKE 15 OFFSET 1{
+        va = va JOG 3;
+    }
+    SHOW(va);
+    DOSHOMIK aaa;
+    aaa = 43.500;
+    JODI(aaa CHOTO abc){
+        aaa = aaa GUN 80;
+        SHOW(aaa);
+    }
+    NOILE{
+        aaa = aaa VAAG 5;
+        SHOW(aaa);
+    }
+    PURNO h;
+    STEP(h){
+        SCENE 1{
+            SHOW(abc);
+        }
+        SCENE 2{
+            SHOW(va);
+        }
+        ROOT{
+            SHOW(aaa);
+        }
+    }
+    JODI(aaa CHOTO abc){
+        aaa = aaa GUN 80;
+        SHOW(aaa);
+    }
+    OTHOBA (aaa BOROSHOMAN va){
+        aaa = aaa BIYOG 100.90;
+        SHOW(aaa);
+    }
+    NOILE{
+        aaa = aaa VAAG 5;
+        SHOW(aaa);
+    }
+    SHOW(aaa);
+    PURNO f,t;
+    f=5;
+    t=2;
+    POW(4,4);
+    SIN(30);
+    COS(60);
+    TAN(45);
+    LOG10(10);
+    LOG(2.718281828); 
+    sl--this is a sinle line complement
+    ml--this is multiple line comment--ml
+SHESH
